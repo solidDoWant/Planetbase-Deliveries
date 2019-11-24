@@ -50,10 +50,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeliveriesMod.cs" />
+    <Compile Include="Patches\Planetbase\CameraManager\SetCinematic.cs" />
+    <Compile Include="Patches\Planetbase\ColonyShip\IsDeleteable.cs" />
+    <Compile Include="Patches\Planetbase\GuiMenuSystem\InitPatch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="assets\png\" />
+    <None Include="LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\strings\en_deliveriesmod.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
